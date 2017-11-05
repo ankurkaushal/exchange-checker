@@ -1,0 +1,20 @@
+{
+  "name": "exchange-checker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "standard | snazzy"
+  },
+  "author": "Ankur Kaushal <ankurkaushal@outlook.com> (http://ankurkaushal.com)",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.145.0",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.3"
+  }
+}
