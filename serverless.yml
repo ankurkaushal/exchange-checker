@@ -58,8 +58,8 @@ functions:
   sendCurrencyEmail:
     handler: handler.sendCurrencyEmail
     events:
-      # 10am every morning
-      - schedule: cron(16 1 * * ? *)
+      # EST - 6pm
+      - schedule: cron(00 23 * * ? *)
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
