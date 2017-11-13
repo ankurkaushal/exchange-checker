@@ -4,7 +4,7 @@ Check exchange rate for your home country often? Exchange Checker is a simple la
 
 ### Prerequisites
 
-You would need `node` version `>=8.0`.
+You would need `node` version `>=6.10`.
 
 ### Installing
 
