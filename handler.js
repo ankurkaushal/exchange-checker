@@ -7,7 +7,7 @@ const config = require('config')
 module.exports.sendCurrencyEmail = (event, context, callback) => {
   currency()
     .then((data) => {
-      return sendEmail(config.get('toEmail'), config.get('fromEmail'), data[Object.keys(data)[0]])
+      return sendEmail(config.get('toEmail'), config.get('fromEmail'), data.rates[Object.keys(data.rates)[0]])
     })
     .then(() => {
       callback(null, { success: true })

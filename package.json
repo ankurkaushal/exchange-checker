@@ -21,6 +21,7 @@
     "config": "^1.29.1",
     "nock": "^9.1.0",
     "snazzy": "^7.0.0",
-    "standard": "^10.0.3"
+    "standard": "^10.0.3",
+    "serverless": "^1.25.0"
   }
 }
