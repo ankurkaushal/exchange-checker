@@ -10,6 +10,9 @@
     "test": "node_modules/.bin/mocha tests/*",
     "lint": "standard --fix | snazzy"
   },
+  "standard": {
+    "globals": ["describe", "it", "before"]
+  },
   "author": "Ankur Kaushal <ankurkaushal@outlook.com> (http://ankurkaushal.com)",
   "license": "ISC",
   "dependencies": {

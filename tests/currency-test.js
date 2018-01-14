@@ -7,8 +7,8 @@ const response = require('./currency-mock-response')
 describe('Currency test', () => {
   before(() => {
     nock('http://api.fixer.io')
-			.get('/latest?base=CAD&symbols=INR')
-			.reply(200, response)
+            .get('/latest?base=CAD&symbols=INR')
+            .reply(200, response)
   })
 
   it('should receive a correct response', () => {
