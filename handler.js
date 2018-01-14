@@ -2,11 +2,12 @@
 
 const currency = require('./lib/currency')
 const sendEmail = require('./lib/sendEmail')
+const config = require('config')
 
 module.exports.sendCurrencyEmail = (event, context, callback) => {
   currency()
     .then((data) => {
-      return sendEmail('ankurkaushal@outlook.com', 'kaushank91@gmail.com', data.rates.INR)
+      return sendEmail(config.get('toEmail'), config.get('fromEmail'), data[Object.keys(data)[0]])
     })
     .then(() => {
       callback(null, { success: true })
